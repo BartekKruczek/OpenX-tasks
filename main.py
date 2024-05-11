@@ -15,11 +15,11 @@ def main() -> None:
         return jsonify({"message": "Request is empty"}), 400
     
     # checking if the request has the key 'farenheit'
-    if 'farenheit' not in data:
+    if 'fahrenheit' not in data:
         return jsonify({"message": "Request does not have the key 'farenheit'"}), 400
     
     # returning the converted temperature
-    return jsonify({"message": Utils(data['farenheit']).temperature_converter_to_Celsius()})
+    return jsonify({"message": Utils(data['fahrenheit']).temperature_converter_to_Celsius()})
 
 if __name__ == '__main__':
     app.run(debug=True)
