@@ -6,4 +6,4 @@ class Utils:
         self.farenheit = farenheit
 
     def temperature_converter_to_Celsius(self) -> float:
-        return round((self.farenheit - 32) * 5.0/9.0, 2)
+        return "{} Farenheit converted into {} Celsius".format(self.farenheit, round((self.farenheit - 32) * 5.0/9.0, 2))
