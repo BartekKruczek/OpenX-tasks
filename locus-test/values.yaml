@@ -1,0 +1,11 @@
+replicaCount: 1
+image:
+  repository: nazwa_obrazu
+  tag: tag_obrazu
+  pullPolicy: Always
+
+locust:
+  host: "http://adres_twojej_aplikacji"
+  numUsers: 100
+  hatchRate: 10
+  runTime: "5m"
